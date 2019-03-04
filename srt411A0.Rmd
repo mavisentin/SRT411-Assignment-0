@@ -1,0 +1,132 @@
+---
+title: "Assignment 0 SRT411"
+author: "Marco Visentin"
+date: "March 3, 2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+This is assignment 0 for SRT 411. This document shows the code and solutions for the TODO sections of the following pdf.
+
+https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+
+ASSIGNMENT LINK AT 
+
+https://my.senecacollege.ca/bbcswebdav/pid-8559365-dt-content-rid-26948722_2/xid-26948722_2
+
+#### TODO #1
+```{r}
+((2014-2017)/(2014-1992))*100
+```
+
+#### TODO #2
+```{r}
+startdate = 2014-2017
+birthdate = 2014-1992
+lifespent = startdate/birthdate
+amount=lifespent * 100
+amount
+```
+
+#### TODO #3
+```{r}
+vec = c(4,5,8,11)
+sum(vec)
+```
+
+#### TODO #4
+```{r}
+plot(rnorm(100))
+```
+
+#### TODO #5
+```{r, echo=FALSE}
+help(sqrt)
+```
+
+#### TODO #6
+```{r}
+for(i in 1:7){
+  source("firstscript.R")
+  }
+```
+
+#### TODO #7
+```{r}
+P = seq(from=31, to=60, by=1)
+Q = matrix(data=P, ncol=5, nrow=6)
+P
+Q
+```
+
+#### TODO #8
+```{r}
+source("secondscript.R")
+```
+
+#### TODO #9
+```{r}
+source("secondscriptaddition.R")
+```
+
+#### TODO #10
+```{r}
+source("thirdscript.R")
+```
+
+#### TODO #11
+```{r}
+nums = c(rnorm(100))
+mean(sqrt(nums))
+```
+
+#### TODO #12
+```{r}
+date = strptime(c("20190215","20140101","20200114"),format ="%Y%m%d")
+exp = c(5,6,2)
+plot(date,exp, xlab="Date", ylab="Presents")
+```
+
+#### TODO #13
+```{r}
+loop = seq(1:100)
+Vec = c()
+for(i in loop){
+  if(i<5 || i>90){
+    Vec[i]=loop[i]*10
+  }
+  else
+  {
+    Vec[i]=loop[i]*0.1
+  }
+}
+print(Vec)
+```
+
+#### TODO #14
+```{r}
+source=("fourthscript.R")
+```
+
+
+#### TODO FOOTNOTE
+
+```{r, echo=FALSE}
+library(knitr)
+library(markdown)
+knit("srt411A0.rmd")
+markdownToHTML("srt411A0.md", "srt411A0.html")
+```
+
+Acknowledgements
+
+https://nicercode.github.io/guides/reports/
+
+http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
+
+http://kbroman.org/knitr_knutshell/pages/markdown.html
+
+https://nicercode.github.io/guides/reports/
+
+https://rmarkdown.rstudio.com/
